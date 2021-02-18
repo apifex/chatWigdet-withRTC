@@ -1,5 +1,7 @@
 /// <reference types="react-scripts" />
 interface IMessage {
-    me: boolean,
-    text: string,
+    isUser: boolean,
+    msg: string,
+    id: number,
+    timestamp: string
 }
