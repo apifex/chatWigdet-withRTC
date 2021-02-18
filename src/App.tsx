@@ -10,7 +10,9 @@ import ChatHeader from './components/chatheader/chatHeader';
 
 //TODO 
 // jakis system do utraconego/przerwanego połączenia (np. id w lockalstorage)
-// style
+// style >> responsywnosc
+// timestampy we wiadomosciach
+// zamkanie okienka czatu, ktore konczy polaczenie
 
 const useWidget = () => {
   const [messages, setMessages] = useState([

@@ -55,10 +55,11 @@ Chat
 --------------------*/
 .chat {
   animation: openbox 0.35s ease-in;
+  width: 300px;
   @include center;
-  position: fixed;
-  bottom: 100px;
-  right: 30px;
+  position: absolute;
+  bottom: 20vh;
+  right: 5vw;
   height: 90vh;
   max-height: 400px;
   z-index: 1;
@@ -75,10 +76,7 @@ Chat
 Chat Title
 --------------------*/
 .chat-title {
-  // display: flex;
-  // flex: 0 1 45px;
   position: relative;
-  // z-index: 2;
   width:100%;
   border-bottom:1px solid #ccc;
   color: #777;
@@ -122,10 +120,7 @@ Messages
 --------------------*/
 .messages {
   flex: 1 1 auto;
-  // color: rgba(255, 255, 255, .5);
-  
   overflow-y: scroll;
-  
   position: relative;
   width: 100%;
   padding: 10px;
@@ -155,7 +150,6 @@ Messages
       content: '';
       position: absolute;
       bottom: -6px;
-      // border-top: 6px solid rgba(0, 0, 0, .3);
       left: 0;
       border-right: 7px solid transparent;
     }
@@ -184,15 +178,12 @@ Messages
       background: rgb(248, 248, 248);
       border:1px solid #ccc;
       text-align: right;
-      // background: linear-gradient(120deg, #248A52, #257287);
       border-radius: 10px 15px 0 10px;
       
       &::before {
         left: auto;
         right: 0;
         border-right: none;
-        // border-left: 5px solid transparent;
-        // border-top: 4px solid #257287;
         bottom: -4px;
       }
     }
@@ -277,7 +268,6 @@ Message Box
     border: none;
     outline: none!important;
     resize: none;
-    // color: rgba(255, 255, 255, .7);
     font-size: 15px;
     height: 24px;
     margin: 0;
@@ -360,7 +350,7 @@ Bounce
 }
 
 
-///chat icon
+//chat icon
 .chat-icon{
   display: block;
   background: transparent;
@@ -391,25 +381,14 @@ Bounce
   background: rgba(255, 255, 255, 0);
   color: #404040;
   position: fixed;
-  // display: flex;
-  font-weight: 400;
-  justify-content: space-between;
-  z-index: 98;
   bottom: 25px;
   right: 30px;
   font-size: 15px;
   padding: 10px 20px;
   border-radius: 30px;
-  // box-shadow: 0 1px 15px rgba(32, 33, 36, 0.28);
+  font-weight: 400;
+  justify-content: space-between;
+  z-index: 98;
   cursor: pointer;
-  // background:linear-gradient(to right top,#6f96f3,#164ed2);
-  // color:#fff;position:fixed;z-index:98;
-  // bottom:25px;
-  // right:30px;
-  // font-size:15px;
-  // padding:10px 20px;
-  // border-radius:30px;
-  // box-shadow:0 1px 15px rgba(32,33,36,.28);
-  // flex: auto;
-  // flex-direction:row ;
 }
+
