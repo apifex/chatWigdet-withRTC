@@ -21,18 +21,16 @@ const MessageHistory = ({messages}:IProps) => {
         <div className='messages' ref={messageRef}>
         {messages.map((message:IMessage)=>
         message.isUser?
-        <div>
         <div key={message.id}
              id={message.msg}
              className='message message-personal new'>
-             {message.msg}    
-        </div>
-        
+             {message.msg}
         </div>
         :
         <div key={message.id} 
              className='message new'>
              {message.msg}
+        
         </div>
         )
         }

@@ -1,5 +1,5 @@
 import {io} from 'socket.io-client'
 
-export const socket = io('https://widgettelegram-server.azurewebsites.net/', 
+export const socket = io('http://localhost:4001', 
 {transports: ['websocket']});
 
